@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="author" content="Mohammad Jubair">
+<meta name="copyright" content="© Mohammad Jubair, Freelancer, BD. All rights reserved.">
+<meta name="description" content="Practical guides and animated tutorials on digital marketing, social media marketing, graphic design and video editing by Mohammad Jubair.">
+<title>Growth & Design Journal — Mohammad Jubair</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#0b0a1a;--card:rgba(255,255,255,.06);--bd:rgba(255,255,255,.12);--tx:#f3f2ff;--mu:#a9a6c9;--a:#7c5cff;--b:#ff4fa3;--c:#22d3ee}
+:root[data-theme="light"]{--bg:#f7f6ff;--card:#fff;--bd:rgba(20,10,80,.12);--tx:#1a1740;--mu:#5b5885}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f7f6ff;--card:#fff;--bd:rgba(20,10,80,.12);--tx:#1a1740;--mu:#5b5885}}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.7 'Poppins','Segoe UI',system-ui,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(600px 400px at 10% 0,rgba(124,92,255,.28),transparent),radial-gradient(500px 400px at 100% 30%,rgba(255,79,163,.2),transparent)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+.grad{background:linear-gradient(90deg,var(--a),var(--b),var(--c));-webkit-background-clip:text;background-clip:text;color:transparent}
+#rp{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:3px;width:0;background:linear-gradient(90deg,var(--a),var(--b),var(--c));z-index:20}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 75%,transparent);border-bottom:1px solid var(--bd)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font-weight:800;white-space:nowrap}
+.links{display:flex;gap:16px;align-items:center;font-size:.9rem;color:var(--mu)}
+.links a:hover{color:var(--tx)}
+.tbtn{background:var(--card);border:1px solid var(--bd);color:var(--tx);border-radius:50%;width:34px;height:34px;cursor:pointer;flex:none}
+h1,h2{font-weight:800;line-height:1.15;margin:0 0 10px}
+h1{font-size:clamp(2rem,5.5vw,3.4rem)}h2{font-size:clamp(1.4rem,3.5vw,2rem)}
+.mu{color:var(--mu)}
+.hero{padding:64px 20px 10px;text-align:center}
+.hero p{max-width:620px;margin:10px auto 22px}
+.search{width:100%;max-width:460px;padding:14px 20px;border-radius:999px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:inherit;outline:none}
+.search:focus{border-color:var(--a)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:22px 0}
+.chip{display:inline-block;padding:8px 16px;border-radius:999px;background:var(--card);border:1px solid var(--bd);color:var(--tx);font:600 .88rem inherit;font-family:inherit;cursor:pointer;transition:.25s}
+.chip.on,.chip:hover{background:linear-gradient(90deg,var(--a),var(--b));color:#fff;border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:18px;transition:.3s;display:block;backdrop-filter:blur(10px)}
+a.card:hover{transform:translateY(-6px);border-color:var(--a)}
+.cov{height:140px;border-radius:14px;display:grid;place-items:center;font-size:3rem;margin-bottom:12px}
+.card small{color:var(--c);font-weight:600}.card h3{margin:.3rem 0;line-height:1.3}.card p{color:var(--mu);margin:0;font-size:.92rem}
+.pg{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:34px 0}
+.art{max-width:760px;margin:36px auto;padding:0 20px}
+.art .cov{height:200px;font-size:5rem;border-radius:24px}
+.tip{display:flex;gap:14px;margin:14px 0;align-items:flex-start}
+.tip i{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--a),var(--b))}
+.band{margin:40px 0;padding:28px;border-radius:24px;background:linear-gradient(135deg,rgba(124,92,255,.25),rgba(255,79,163,.2));border:1px solid var(--bd);text-align:center}
+.stg{position:relative;aspect-ratio:16/9;border-radius:14px;background:#12103a;overflow:hidden}
+.e{position:absolute;display:grid;place-items:center;color:#fff;font-weight:700;font-size:clamp(.6rem,1.8vw,.95rem);text-align:center;opacity:0;transition:all .9s cubic-bezier(.3,1.3,.5,1)}
+.cap{margin:12px 0}.cap b{display:block}.cap span{color:var(--mu);font-size:.92rem}
+.ctl{display:flex;align-items:center;gap:10px}
+.seg{flex:1;display:flex;gap:6px}.seg i{flex:1;height:6px;border-radius:9px;background:var(--bd);cursor:pointer}.seg i.on{background:linear-gradient(90deg,var(--a),var(--b))}
+footer{text-align:center;color:var(--mu);padding:40px 20px;font-size:.85rem;border-top:1px solid var(--bd);margin-top:50px}
+@media(max-width:600px){.links a.h{display:none}.links{gap:10px}.logo{font-size:.9rem}nav .wrap{padding:0 14px}}
+</style>
+</head>
+<body>
+<div id="rp"></div>
+<nav><div class="wrap"><a class="logo grad" href="#/">Growth &amp; Design Journal</a>
+<div class="links"><a class="h" href="#/cat/dm">Marketing</a><a class="h" href="#/cat/gd">Design</a><a class="h" href="#/cat/ve">Video</a><a href="#/tutorials">▶ Tutorials</a><a href="#/about">About</a><button class="tbtn" id="tg" title="Theme">◐</button></div></div></nav>
+<main id="app"></main>
+<footer id="ft"></footer>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const CATS={dm:['Digital Marketing','📈','#7c5cff,#22d3ee'],sm:['Social Media','📱','#ff4fa3,#7c5cff'],gd:['Graphic Design','🎨','#f59e0b,#ff4fa3'],ve:['Video Editing','🎬','#22d3ee,#ff4fa3']};
+
+/* ===== ADD NEW ARTICLES HERE: ['category','Title','Intro sentence',['Tip title: explanation', ...]] — pages, search & pagination update automatically ===== */
+const RAW=[
+['dm','How to Build a Simple Digital Marketing Plan in One Afternoon','A good plan is not 40 slides. It is one goal, one audience and a weekly routine you can actually keep.',['Set one goal: Choose a measurable target, such as 100 leads or 20 sales in 60 days.','Know your audience: Write who they are, what problem they have and where they spend time online.','Pick two channels: Get steady results on two platforms before adding a third.','Batch your content: Create a week of posts in one sitting and schedule them.','Review monthly: Keep what brings results and drop what does not.']],
+['dm','SEO Basics for Freelancers: Get Found on Google','You do not need a big budget to appear in search. You need pages that answer real questions clearly.',['Research real questions: Use Google suggestions and People Also Ask to see what clients search for.','One topic per page: Give each page a single clear keyword and a helpful title.','Write for humans: Short paragraphs, plain words and useful headings beat keyword stuffing.','Be fast on mobile: Compress images and test your page on a phone.','Earn links: Share useful work so other people want to link to it.']],
+['dm','Email Marketing for Beginners: Turn Followers into Clients','Social platforms change their rules often. Your email list is the one audience you truly own.',['Offer a lead magnet: Give a free checklist or template in exchange for an email address.','Write short subject lines: Aim for clear and curious, not clickbait.','One goal per email: Ask readers to do a single thing, like reply or book a call.','Segment your list: Send different messages to new leads and past clients.','Test and improve: Try different send times and read your open and click rates.']],
+['sm','Social Media Content Calendar: Plan 30 Days Fast','Posting randomly burns energy. A simple calendar keeps you consistent and saves hours every week.',['Choose 3 to 4 pillars: For example tips, behind the scenes, client results and offers.','Mix formats: Rotate images, short videos, carousels and text posts.','Batch create: Design and write in one session, then schedule everything.','Post at steady times: Consistency matters more than posting every hour.','Leave room for trends: Keep two open slots each week for timely ideas.']],
+['sm','How to Grow a Facebook Page Organically','Organic growth is slow but steady. Focus on value and conversation, not only on selling.',['Post when your audience is online: Check Page Insights for the best days and times.','Use video and Reels: Native video usually reaches more people than links.','Reply fast: Answer comments and messages within the first hour.','Use Groups: Join relevant groups and add value before promoting.','Track results: Review Insights weekly and repeat your best posts.']],
+['sm','Instagram Reels Tips That Boost Reach','Reels are short, so every second counts. Start strong and give viewers a reason to stay.',['Hook in two seconds: Open with a bold question, result or movement.','Add on-screen text: Many people watch with the sound off.','Keep it short: 7 to 15 seconds is a great place to start.','Use fitting audio: Trending sounds help only if they match your message.','End with a call to action: Ask viewers to follow, save or comment.']],
+['gd','Graphic Design Basics: 5 Principles Every Beginner Needs','Good design feels simple because a few principles are working quietly in the background.',['Contrast: Make important things stand out with size, colour or weight.','Hierarchy: Guide the eye from headline to details to the call to action.','Alignment: Line elements up so the layout looks neat and intentional.','Repetition: Reuse colours, fonts and shapes to build a consistent brand.','White space: Give elements room to breathe so the message is clear.']],
+['gd','How to Choose Brand Colors That Work','Colour shapes how people feel about a brand before they read a single word.',['Start with emotion: Blue feels trustworthy, red feels energetic, green feels fresh.','Use the 60-30-10 rule: 60 percent main colour, 30 percent secondary, 10 percent accent.','Check contrast: Make sure text is easy to read on its background.','Limit your palette: Three to five colours is plenty for most brands.','Test in real designs: Try your palette on a logo, a post and a web page.']],
+['gd','Typography Tips: Pair Fonts Like a Pro','Fonts carry your brand voice. A clean pairing makes your design look professional in seconds.',['Use two fonts at most: One for headings and one for body text.','Contrast the pair: Combine a bold display font with a simple readable one.','Mind the size: Body text must stay comfortable to read on a phone.','Adjust spacing: Give lines enough height so text does not feel crowded.','Build a hierarchy: Use size and weight to show what to read first.']],
+['ve','Video Editing Workflow: From Raw Clips to Final Export','A repeatable workflow saves time and stops you missing steps on every project.',['Organise files: Sort clips, music and graphics into named folders first.','Make a rough cut: Put the best moments in order before polishing anything.','Trim tightly: Remove pauses and mistakes so the pace stays lively.','Fix the audio: Clean the voice, balance the music and check the levels.','Colour and export: Match your clips, then export in the right size for each platform.']],
+['ve','Editing Short Promo Videos That Hold Attention','Promo videos live or die in the first few seconds. Make every frame earn its place.',['Lead with a hook: Show the result or the problem right away.','Cut fast: Change the shot every two or three seconds.','Add captions: Text keeps viewers watching without sound.','Keep music under the voice: Lower the track so speech stays clear.','Finish with an end card: Add your logo and one clear call to action.']],
+['ve','How to Add Subtitles That Viewers Actually Read','Subtitles make videos accessible, searchable and easier to watch in noisy places.',['Start with an accurate transcript: Fix spelling and names before you time anything.','Keep to two lines: Short lines are easier to read quickly.','Match the timing: Show each line as it is spoken.','Choose a readable style: Use a clean font with strong contrast against the video.','Stay in the safe area: Keep text away from the edges and app buttons.']]
+];
+/* ================================================================================================ */
+const POSTS=RAW.map((r,i)=>({c:r[0],t:r[1],i:r[2],k:r[3],s:'p'+(i+1)+'-'+r[1].toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''),d:new Date(2026,8,28-3*i),r:Math.max(2,Math.round((r[2]+' '+r[3].join(' ')).split(' ').length/180))}));
+const fd=d=>d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
+const card=p=>{const c=CATS[p.c];return `<a class="card" href="#/post/${p.s}"><div class="cov" style="background:linear-gradient(135deg,${c[2]})">${c[1]}</div><small>${c[0]} · ${fd(p.d)} · ${p.r} min</small><h3>${esc(p.t)}</h3><p>${esc(p.i)}</p></a>`};
+
+/* ===== Animated tutorials: scene items are [firstStep, css, cssAtStep2, cssAtStep3, text] ===== */
+const TUTS=[
+{n:'🎬 Video Editing: Cut & Trim on a Timeline',st:[['1. Import & arrange','Drop your clips on the timeline in story order.'],['2. Split at the playhead','Move the playhead and split the clip to remove mistakes.'],['3. Captions & export','Add captions, then export in the right size.']],
+sc:[[1,'left:6%;top:8%;width:88%;height:44%;background:linear-gradient(135deg,#7c5cff,#ff4fa3);border-radius:12px','','','▶ Preview'],[1,'left:4%;top:58%;width:92%;height:34%;background:rgba(255,255,255,.08);border-radius:8px'],[1,'left:6%;top:63%;width:38%;height:24%;background:#22d3ee;border-radius:6px','width:17%','','Clip A'],[2,'left:25%;top:63%;width:19%;height:24%;background:#f59e0b;border-radius:6px','','','A2'],[1,'left:46%;top:63%;width:46%;height:24%;background:#ff4fa3;border-radius:6px','','','Clip B'],[1,'left:7%;top:55%;width:.6%;height:40%;background:#fff;z-index:2','left:24%'],[3,'left:14%;top:38%;width:72%;height:10%;background:rgba(0,0,0,.65);border-radius:8px','','','Auto captions ✔'],[3,'left:4%;top:94%;width:92%;height:3%;background:#22d3ee;border-radius:9px']]},
+{n:'🎨 Graphic Design: Build a Social Post',st:[['1. Set canvas & grid','Choose the post size and turn on guides for alignment.'],['2. Pick a 3-colour palette','Use one main, one secondary and one accent colour.'],['3. Add text & export','Add a bold headline and button, then export as PNG.']],
+sc:[[1,'left:32%;top:6%;width:36%;height:88%;background:#fff;border-radius:10px','background:linear-gradient(160deg,#7c5cff,#ff4fa3)'],[1,'left:32%;top:50%;width:36%;height:1px;background:#7c5cff;z-index:1'],[1,'left:50%;top:6%;width:1px;height:88%;background:#7c5cff;z-index:1'],[2,'left:9%;top:16%;width:11%;height:19%;background:#7c5cff;border-radius:50%'],[2,'left:9%;top:41%;width:11%;height:19%;background:#ff4fa3;border-radius:50%'],[2,'left:9%;top:66%;width:11%;height:19%;background:#22d3ee;border-radius:50%'],[3,'left:36%;top:20%;width:28%;height:14%;background:#fff;color:#1a1740;border-radius:6px','','','Big Sale'],[3,'left:36%;top:40%;width:28%;height:5%;background:rgba(255,255,255,.7);border-radius:4px'],[3,'left:39%;top:70%;width:22%;height:10%;background:#22d3ee;border-radius:99px','','','Shop'],[3,'left:74%;top:16%;width:18%;height:14%;background:#16a34a;border-radius:8px','','','✔ PNG']]},
+{n:'📱 Social Media: The Content Funnel',st:[['1. Awareness','Reach new people with videos and short posts.'],['2. Engagement','Build trust with tips, replies and stories.'],['3. Conversion','Invite warm followers to book, buy or message you.']],
+sc:[[1,'left:10%;top:12%;width:80%;height:22%;background:#7c5cff;border-radius:10px','','','👀 Awareness'],[2,'left:22%;top:40%;width:56%;height:22%;background:#ff4fa3;border-radius:10px','','','💬 Engagement'],[3,'left:34%;top:68%;width:32%;height:22%;background:#22d3ee;color:#062;border-radius:10px','','','💰 Sales']]}
+];
+function player(t){
+ const d=document.createElement('div');d.className='card';
+ d.innerHTML=`<h3 style="margin:0 0 12px">${t.n}</h3><div class="stg">${t.sc.map(e=>`<div class="e">${e[4]||''}</div>`).join('')}</div><div class="cap"><b></b><span></span></div><div class="ctl"><button class="tbtn">⏸</button><div class="seg"><i></i><i></i><i></i></div></div>`;
+ const E=[...d.querySelectorAll('.e')],S=[...d.querySelectorAll('.seg i')],bt=d.querySelector('button');let n=1,on=1;
+ const go=k=>{n=k;E.forEach((el,i)=>{const e=t.sc[i];el.style.cssText=e[1]+';'+(n>1&&e[2]||'')+';'+(n>2&&e[3]||'')+';opacity:'+(n>=e[0]?1:0)+';transform:'+(n>=e[0]?'none':'scale(.4)')});S.forEach((s,i)=>s.classList.toggle('on',i<n));d.querySelector('b').textContent=t.st[n-1][0];d.querySelector('span').textContent=t.st[n-1][1]};
+ const iv=setInterval(()=>{if(!d.isConnected)return clearInterval(iv);if(on)go(n%3+1)},3400);
+ bt.onclick=()=>{on=!on;bt.textContent=on?'⏸':'▶'};S.forEach((s,i)=>s.onclick=()=>go(i+1));
+ setTimeout(()=>go(1),80);return d;
+}
+
+/* ===== Pages ===== */
+const app=$('#app');let Q='',PGN=1,CAT='';
+const chip=(k,l)=>`<a class="chip ${CAT===k?'on':''}" href="#/${k?'cat/'+k:''}">${l}</a>`;
+function drawGrid(){
+ const src=POSTS.filter(p=>(!CAT||p.c===CAT)&&(!Q||(p.t+' '+p.i).toLowerCase().includes(Q)));
+ const pages=Math.ceil(src.length/9)||1;PGN=Math.min(PGN,pages);
+ $('#gr').innerHTML=src.slice((PGN-1)*9,PGN*9).map(card).join('')||'<p class="mu">No articles found.</p>';
+ $('#pg').innerHTML=pages>1?Array.from({length:pages},(_,i)=>`<button class="chip ${i+1===PGN?'on':''}" data-p="${i+1}">${i+1}</button>`).join(''):'';
+}
+function list(cat){
+ CAT=cat||'';PGN=1;
+ app.innerHTML=`<section class="hero wrap"><span class="chip">✍️ By Mohammad Jubair · Freelancer, BD</span><h1 style="margin-top:16px">Grow. Design. <span class="grad">Create.</span></h1><p class="mu">Practical guides on digital marketing, social media, graphic design and video editing, plus animated video tutorials.</p><input class="search" id="q" placeholder="Search ${POSTS.length} articles…" value="${esc(Q)}"><div class="chips">${chip('','All')}${Object.keys(CATS).map(k=>chip(k,CATS[k][1]+' '+CATS[k][0])).join('')}</div></section>
+ <div class="wrap"><div class="grid" id="gr"></div><div class="pg" id="pg"></div>${CAT?'':`<div class="band"><h2>🎥 Watch the <span class="grad">animated tutorials</span></h2><p class="mu">Step-by-step lessons on video editing, graphic design and social media funnels.</p><a class="chip on" href="#/tutorials">▶ Watch now</a></div>`}</div>`;
+ $('#q').oninput=e=>{Q=e.target.value.trim().toLowerCase();PGN=1;drawGrid()};
+ $('#pg').onclick=e=>{const b=e.target.closest('[data-p]');if(b){PGN=+b.dataset.p;drawGrid();$('#gr').scrollIntoView()}};
+ drawGrid();
+}
+function post(s){
+ const p=POSTS.find(x=>x.s===s);if(!p)return list('');const c=CATS[p.c];
+ app.innerHTML=`<article class="art"><a class="mu" href="#/cat/${p.c}">← ${c[0]}</a><div class="cov" style="background:linear-gradient(135deg,${c[2]});margin-top:14px">${c[1]}</div><h1 style="margin-top:20px">${esc(p.t)}</h1><p class="mu">By Mohammad Jubair · ${fd(p.d)} · ${p.r} min read</p><p style="font-size:1.1rem">${esc(p.i)}</p>${p.k.map((k,i)=>{const [h,...b]=k.split(': ');return `<div class="card tip"><i>${i+1}</i><div><b>${esc(h)}</b><br><span class="mu">${esc(b.join(': '))}</span></div></div>`}).join('')}<p class="mu"><small>© Mohammad Jubair, Freelancer, BD. Please do not copy or republish without permission.</small></p><button class="chip" id="sh">🔗 Copy link</button><h2 style="margin-top:40px">Keep reading</h2><div class="grid">${POSTS.filter(x=>x.c===p.c&&x!==p).slice(0,3).map(card).join('')}</div></article>`;
+ $('#sh').onclick=e=>{try{navigator.clipboard.writeText(location.href);e.target.textContent='✔ Copied'}catch(_){e.target.textContent=location.href}};
+}
+function tuts(){
+ app.innerHTML=`<section class="hero wrap"><h1>Animated <span class="grad">Video Tutorials</span></h1><p class="mu">Short animated lessons. Press pause or tap a step to explore.</p></section><div class="wrap"><div class="grid" id="tt" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))"></div></div>`;
+ TUTS.forEach(t=>$('#tt').append(player(t)));
+}
+function about(){
+ app.innerHTML=`<div class="art"><h1>About the <span class="grad">Author</span></h1><p>I'm <b>Mohammad Jubair</b>, a freelancer from Bangladesh working in social media management, digital marketing, graphic design, promo video making, English ⇄ Rohingya translation and transcription.</p><p class="mu">This journal shares the practical lessons I use with clients, in plain language.</p><a class="chip on" href="mailto:pcrc.mdjubair@gmail.com">✉ Hire me</a><p class="mu" style="margin-top:30px"><small>All articles, designs and tutorials on this site are © Mohammad Jubair, Freelancer, BD. All rights reserved.</small></p></div>`;
+}
+function route(){const h=location.hash.slice(2).split('/');scrollTo(0,0);h[0]==='post'?post(h[1]):h[0]==='tutorials'?tuts():h[0]==='about'?about():list(h[0]==='cat'?h[1]:'')}
+addEventListener('hashchange',route);route();
+addEventListener('scroll',()=>{$('#rp').style.width=(scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight)*100)+'%'});
+$('#tg').onclick=()=>{const r=document.documentElement;r.dataset.theme=getComputedStyle(r).getPropertyValue('--bg').trim()==='#0b0a1a'?'light':'dark'};
+$('#ft').innerHTML='© '+new Date().getFullYear()+' <b>Mohammad Jubair</b>, Freelancer, BD. All rights reserved.<br>All content is protected by copyright.';
+</script>
+</body>
+</html>
